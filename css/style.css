@@ -376,6 +376,10 @@
                 height: 55px;
                 margin-top: 25px;
             }
+            /* we need to do onclick but now its on over */
+            .nav-main :nth-child(1):hover .dropdown {
+                display: block;
+            }
             .main-layout {
                 margin-top: 40px;
             }
