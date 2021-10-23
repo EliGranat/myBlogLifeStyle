@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="main-screen" onclick="toggleMenu()"></div>
+        <div class="container-nav main-layout-width">
+            <div class="logo ">Blogin<span>.</span></div>
+            <ul class="nav-main font-bord ">
+                <li class="selected-green-border"><a href="#" class="selected-green-color">Journal</a>
+                    <ul class="dropdown">
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="btn-menu" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+    <main class="main-layout-width main-layout">
+        <div class="card">
+            <img src="./img/001.png" alt="img1">
+            <div class="card-container-txt">
+                <h2 class="card-title font-bord">DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <a href="#">
+                    <button class="read-card">Continue Reading <span class="hide-point-hover">→</span></button>
+
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/002.png" alt="img2">
+            <div class="card-container-txt">
+                <h2 class="card-title font-bord">DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <a href="#"><button class="read-card">Continue Reading <span class="hide-point-hover">→</span></button></a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/003.png" alt="img3">
+            <div class="card-container-txt">
+                <h2 class="card-title font-bord">DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <a href="#"><button class="read-card  ">Continue Reading <span class="hide-point-hover  ">→</span></button></a>
+
+            </div>
+        </div>
+        <div class="nav-next-preious ">
+            <div class="previous-nav hover">
+                <h4>← PREVIOUS</h4>
+            </div>
+            <div class="next-nav hover">
+                <h4>NEXT →</h4>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+
+        <div class="footer-contect">
+
+            <h3 class="logo-footer">Blogin<span>.</span></h3>
+            <h5 class="cofferights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span>Pixelhint.com</span> </h5>
+            <ul class="social-nav">
+                <li class="btn">
+                    <img src="./img/img-web/f.svg" alt="facebook">
+                </li>
+                <li class="btn">
+                    <img src="./img/img-web/t.svg" alt="twiter">
+                </li>
+                <li class="btn">
+                    <img src="./img/img-web/bh.svg" alt="bh">
+                </li>
+                <li class="btn">
+                    <img src="./img/img-web/ball.svg" alt="ball">
+                </li>
+        </div>
+
+
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open')
+        }
+    </script>
+</body>
+
+</html>
