@@ -12,6 +12,7 @@
 <body>
     <header class="header-main">
         <div class="main-screen" onclick="toggleMenu()"></div>
+        <div class="main-screen" onclick="toggleModal()"></div>
         <div class="container-nav main-layout-width">
             <div class="logo ">Blogin<span>.</span></div>
             <ul class="nav-main font-bord ">
@@ -36,12 +37,19 @@
                 <h2 class="card-title font-bord">DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE.</h2>
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
                 <a href="#">
-                    <button class="read-card">Continue Reading <span class="hide-point-hover">→</span></button>
-
+                    <button class="read-card" onclick="toggleModal()">Continue Reading <span class="hide-point-hover">→</span></button>
                 </a>
+                <div class="read-more-modal">
+                    <h3 onclick=" toggleModal()">X</h3>
+                    <h1>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsam consectetur reiciendis laudantium tempora vitae quas eos impedit nostrum quidem.</p>
+                    <h3>Join us to get access to the latest stories!</h3>
+                    <label for="email"> please enter your email</label>
+                    <input type="email" name="email" id="email" placeholder="example@mail">
+                    <button onclick="toggleModal()">submit</button>
+                </div>
             </div>
         </div>
         <div class="card">
@@ -50,9 +58,19 @@
                 <h2 class="card-title font-bord">DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE.</h2>
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <a href="#"><button class="read-card">Continue Reading <span class="hide-point-hover">→</span></button></a>
+                <a href="#">
+                    <button class="read-card" onclick="toggleModal()">Continue Reading <span class="hide-point-hover">→</span></button>
+                </a>
+                <div class="read-more-modal">
+                    <h3 onclick=" toggleModal()">X</h3>
+                    <h1>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsam consectetur reiciendis laudantium tempora vitae quas eos impedit nostrum quidem.</p>
+                    <h3>Join us to get access to the latest stories!</h3>
+                    <label for="email"> please enter your email</label>
+                    <input type="email" name="email" id="email" placeholder="example@mail">
+                    <button onclick="toggleModal()">submit</button>
+                </div>
             </div>
         </div>
         <div class="card">
@@ -61,10 +79,19 @@
                 <h2 class="card-title font-bord">DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE.</h2>
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <a href="#"><button class="read-card  ">Continue Reading <span class="hide-point-hover  ">→</span></button></a>
-
+                <a href="#">
+                    <button class="read-card" onclick="toggleModal()">Continue Reading <span class="hide-point-hover">→</span></button>
+                </a>
+                <div class="read-more-modal">
+                    <h3 onclick=" toggleModal()">X</h3>
+                    <h1>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsam consectetur reiciendis laudantium tempora vitae quas eos impedit nostrum quidem.</p>
+                    <h3>Join us to get access to the latest stories!</h3>
+                    <label for="email"> please enter your email</label>
+                    <input type="email" name="email" id="email" placeholder="example@mail">
+                    <button onclick="toggleModal()">submit</button>
+                </div>
             </div>
         </div>
         <div class="nav-next-preious ">
@@ -78,9 +105,7 @@
     </main>
 
     <footer class="main-footer">
-
         <div class="footer-contect">
-
             <h3 class="logo-footer">Blogin<span>.</span></h3>
             <h5 class="cofferights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span>Pixelhint.com</span> </h5>
             <ul class="social-nav">
@@ -97,13 +122,15 @@
                     <img src="./img/img-web/ball.svg" alt="ball">
                 </li>
         </div>
-
-
     </footer>
 
     <script>
         function toggleMenu() {
             document.body.classList.toggle('menu-open')
+        }
+
+        function toggleModal() {
+            document.body.classList.toggle('modal-open')
         }
     </script>
 </body>
