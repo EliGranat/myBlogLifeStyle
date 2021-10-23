@@ -29,9 +29,12 @@
             min-width: 450px;
         }
         
+        ul {
+            list-style-type: none
+        }
+        
         img {
             width: 100%;
-            /* max-height: 307px; */
         }
         
         h1,
@@ -69,8 +72,9 @@
         /* header */
         
         .header-main {
-            height: 128px;
+            height: 131px;
             background-color: #292929;
+            border: solid 1px #707070;
         }
         /* container-nav-hader */
         
@@ -82,10 +86,12 @@
         }
         /* logo header */
         
-        .header-main .logo {
-            bottom: 50%;
-            font-size: 2.5rem;
+        .font-eurofurence-regular {
             font-family: eurofurence-regular;
+        }
+        
+        .header-main .logo {
+            font-size: 2.5rem;
             color: #FFFFFF;
         }
         
@@ -96,13 +102,16 @@
         
         .nav-main {
             list-style-type: none;
-            /* height: 100%; */
             text-align: center;
             font-size: 1rem;
         }
         
         .nav-main a {
             color: #FFFFFF;
+        }
+        
+        .nav-main a:hover {
+            color: #58C93A;
         }
         /* .nav-main li a:visited {
             color: rgb(179, 137, 137);
@@ -123,15 +132,10 @@
         
         .dropdown {
             display: none;
-            margin-top: 50px;
+            margin-top: 55px;
             color: #58C93A;
             background-color: #292929;
             position: relative;
-            z-index: 2;
-        }
-        
-        .nav-main :nth-child(1):hover .dropdown {
-            display: block;
         }
         
         .dropdown li {
@@ -140,10 +144,6 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-        }
-        
-        .nav-main a:hover {
-            color: #58C93A;
         }
         /* font bord lato */
         
@@ -202,11 +202,6 @@
             display: block;
         }
         
-        body.modal-open .main-screen {
-            pointer-events: auto;
-            opacity: 1;
-        }
-        
         .read-more-modal :first-child {
             text-align: end;
             cursor: pointer;
@@ -245,7 +240,6 @@
         
         .main-footer {
             height: 315px;
-            width: 100%;
             background-color: #F8F8F8;
         }
         
@@ -253,7 +247,6 @@
             height: 100%;
             max-width: 534px;
             margin: 0 auto;
-            text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -267,14 +260,12 @@
         }
         
         .cofferights span {
-            font-family: lato-bold;
             color: #939292;
         }
         
         .cofferights {
             margin-bottom: 40px;
             font-size: .812rem;
-            font-family: lato-regular;
             color: #A6A6A6;
         }
         
@@ -291,7 +282,8 @@
             height: 40px;
             width: 40px;
             background-color: #E5E5E5;
-            margin-inline-end: 28px;
+            margin-left: 14px;
+            margin-right: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -328,7 +320,8 @@
         }
         /* screens */
         
-        .main-screen {
+        .main-screen,
+        .main-screen-modal {
             position: fixed;
             top: 0;
             right: 0;
@@ -345,12 +338,14 @@
             pointer-events: auto;
             opacity: 1;
         }
+        
+        body.modal-open .main-screen-modal {
+            pointer-events: auto;
+            opacity: 1;
+        }
         /* mobile */
         
         @media (max-width:740px) {
-            body {
-                padding: 10px;
-            }
             .nav-main {
                 background-color: #292929;
                 position: fixed;
@@ -367,17 +362,18 @@
             .btn-menu {
                 margin-inline-end: 40px;
                 font-size: 2rem;
+                height: 50px;
+                width: 50px;
             }
             .btn-menu:hover {
-                background-color: rgb(136, 133, 133);
+                background-color: rgb(136, 112, 112);
                 cursor: pointer;
             }
             .logo {
-                margin-left: 15px;
+                margin-left: 30px;
             }
             .nav-main>li {
                 height: 55px;
-                width: 200px;
                 margin-top: 25px;
             }
             .main-layout {
@@ -385,60 +381,65 @@
             }
             .main-layout .card {
                 margin-bottom: 60px;
+                padding-inline-start: 30px;
+                padding-inline-end: 30px;
             }
             .card-container-txt {
-                margin-inline-start: 12px;
-                margin-inline-end: 12px;
+                margin-top: 25px;
             }
             .read-more-modal {
                 height: 100%;
                 width: 100%;
+                padding: 25%;
             }
         }
         /* tablet */
         
         @media (min-width:740px) {
-            .read-more-modal {
-                height: 450px;
-                width: 400px;
-            }
-            .main-layout .card {
-                margin-bottom: 60px;
-            }
-            .main-layout {
-                padding-top: 40px;
-                border: #E1E0E0 1px solid;
-            }
             .nav-main {
                 flex-direction: row;
                 height: 100%;
                 display: flex;
             }
-            .card-container-txt {
-                margin-inline-start: 20px;
-                margin-inline-end: 20px;
+            .nav-main :nth-child(1):hover .dropdown {
+                display: block;
             }
-            body {
-                padding: 40px;
+            .main-layout .card {
+                margin-bottom: 40px;
+                padding: 0 70px;
+            }
+            .main-layout {
+                padding-top: 40px;
+                border: #E1E0E0 1px solid;
+            }
+            .card-container-txt {
+                margin-top: 20px;
             }
             .logo {
-                margin-left: 15px;
+                margin-left: 30px;
             }
             .nav-main>li {
                 width: 131px;
-                margin-top: 60px;
+                margin-top: 56px;
             }
             .btn-menu {
                 display: none;
+            }
+            .read-more-modal {
+                height: 450px;
+                width: 400px;
             }
         }
         /* desktop */
         
         @media (min-width:990px) {
+            .logo {
+                margin-left: 0px;
+            }
             .main-layout .card {
                 display: flex;
                 margin-bottom: 80px;
-                flex-direction: row;
+                padding: 0;
             }
             .main-layout {
                 padding-top: 80px;
@@ -446,8 +447,6 @@
             }
             .card-container-txt {
                 margin-inline-start: 40px;
-            }
-            body {
-                padding: 0px;
+                margin-top: 0px;
             }
         }
