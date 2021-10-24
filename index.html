@@ -13,7 +13,7 @@
     <header class="header-main">
         <div class="main-screen" onclick="toggleMenu()"></div>
         <div class="main-screen-modal" onclick="toggleModal()"></div>
-        <div class="container-nav main-layout-width">
+        <div class="container-nav main-container">
             <div class="logo font-eurofurence-regular">Blogin<span>.</span></div>
             <ul class="nav-main font-bord ">
                 <li class="selected-green-border"><a href="#" class="selected-green-color">Journal</a>
@@ -27,10 +27,10 @@
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <button class="btn-menu" onclick="toggleMenu()">☰</button>
+            <button class="btn-menu" onclick="toggleMenu()"></button>
         </div>
     </header>
-    <main class="main-layout-width main-layout">
+    <main class="main-container main-content">
         <div class="card">
             <img src="./img/001.png" alt="img1">
             <div class="card-container-txt">
@@ -38,9 +38,9 @@
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <a href="#">
-                    <button class="read-card" onclick="toggleModal()">Continue Reading <span class="hide-point-hover">→</span></button>
-                </a>
+
+                <button class="read-card" onclick="toggleModal()">Continue Reading </button>
+
                 <div class="read-more-modal">
                     <h3 onclick=" toggleModal()">X</h3>
                     <h1>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h1>
@@ -59,9 +59,8 @@
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <a href="#">
-                    <button class="read-card" onclick="toggleModal()">Continue Reading <span class="hide-point-hover">→</span></button>
-                </a>
+                <button class="read-card" onclick="toggleModal()">Continue Reading </button>
+
                 <div class="read-more-modal">
                     <h3 onclick=" toggleModal()">X</h3>
                     <h1>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h1>
@@ -80,9 +79,9 @@
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <a href="#">
-                    <button class="read-card" onclick="toggleModal()">Continue Reading <span class="hide-point-hover">→</span></button>
-                </a>
+
+                <button class="read-card" onclick="toggleModal()">Continue Reading </button>
+
                 <div class="read-more-modal">
                     <h3 onclick=" toggleModal()">X</h3>
                     <h1>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h1>
@@ -109,17 +108,15 @@
             <h3 class="logo-footer font-eurofurence-regular">Blogin<span>.</span></h3>
             <h5 class="cofferights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span class="font-bord">Pixelhint.com</span> </h5>
             <ul class="social-nav">
-                <li class="btn">
-                    <img src="./img/img-web/f.svg" alt="facebook">
+                <li class="facebook flex-center-social"></li>
+                <li class="twiter flex-center-social">
+
                 </li>
-                <li class="btn">
-                    <img src="./img/img-web/t.svg" alt="twiter">
+                <li class="be flex-center-social">
+
                 </li>
-                <li class="btn">
-                    <img src="./img/img-web/bh.svg" alt="bh">
-                </li>
-                <li class="btn">
-                    <img src="./img/img-web/ball.svg" alt="ball">
+                <li class="ball flex-center-social">
+
                 </li>
         </div>
     </footer>
