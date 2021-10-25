@@ -392,6 +392,9 @@
                 font-size: 2rem;
                 height: 50px;
                 width: 50px;
+
+-webkit-appearance: none;
+
             }
             .btn-menu::before {
                 font-family: fa-solid;
